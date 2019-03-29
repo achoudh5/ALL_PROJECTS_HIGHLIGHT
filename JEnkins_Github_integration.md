@@ -6,7 +6,7 @@ This is to make sure all the files inside the submodule directory gets cloned as
 You can do it directly as well while cloning by using:-
 git clone --recurse-submodules <repo to be cloned>
 
-** Pre-Requisites **:-
+**Pre-Requisites**:-
 Files required at the repository where the test & deploy scripts would be running and **not** your remote repository,
 
 *tox.ini*
@@ -16,9 +16,10 @@ Files required at the repository where the test & deploy scripts would be runnin
 Why do we need the files mentioned above ?
 tox is a generic virtualenv management and test command line tool you can use to run automated tests against four different versions of python on different platforms:-
 
-** Example file ** of tox.ini :-
+**Example file** of tox.ini :-
 [tox]
 envlist = py27
+
 **#Checking that package installs correctly with different Python versions and interpreters**
 [testenv]
 install_command = pip install . {packages}
@@ -42,13 +43,17 @@ deps=
   b) setup.py
 It  is a python file, which usually tells you that the module/package you are about to install has been packaged and distributed with Distutils
 https://stackoverflow.com/a/39811884/8071222
+
 **Step by step guide**:- This is a step by step guide for deploying the package to pypi server across all sites (Antwerp, Mountain View, Raleigh).
 
 At **Github enterprise** :- These are the things which the **owner of the repo**  has to make sure are configured correctly before they test the build on Jenkins for any repository.
 
 Make sure you can view the settings tab on the repository.
+
 Inside the settings:-
+
 Under *Collaborators & Teams* subsection
+
 Add **Bot** and **Jenkins** as the collaborator and make sure to give them the **write** access. 
 *Note*: If you don’t give the write access then the status checks would get updated and you would see that even after the success of the job build they are still stuck in running state.
 	      
