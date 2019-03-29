@@ -6,7 +6,7 @@ This is to make sure all the files inside the submodule directory gets cloned as
 You can do it directly as well while cloning by using:-
 git clone --recurse-submodules <repo to be cloned>
 
-**Pre-Requisites**:-
+** Pre-Requisites **:-
 Files required at the repository where the test & deploy scripts would be running and **not** your remote repository,
 
 *tox.ini*
@@ -16,7 +16,7 @@ Files required at the repository where the test & deploy scripts would be runnin
 Why do we need the files mentioned above ?
 tox is a generic virtualenv management and test command line tool you can use to run automated tests against four different versions of python on different platforms:-
 
-**Example file** of tox.ini :-
+** Example file ** of tox.ini :-
 [tox]
 envlist = py27
 **#Checking that package installs correctly with different Python versions and interpreters**
