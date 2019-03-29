@@ -31,12 +31,15 @@ commands =
        
 
 **#Coverage tells you what parts of your code are actually getting executed by the test suite. It can't guarantee that you're testing that code properly, but it'll tell you if there's code that isn't being tested at all**
+
 ***The exit status at the end of the test will tell us if there was a successful or failure test.***
 deps=
         mock
         discover
         Coverage
-**# The discover allows to discover and run unit tests and we can easily integrate it in a tox **
+
+**The discover allows to discover and run unit tests and we can easily integrate it in a tox **
+
 **#Running your tests in each of the environments, configuring your test tool of choice**
    
 
