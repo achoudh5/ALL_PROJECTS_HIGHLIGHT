@@ -1,4 +1,3 @@
-# Riverbed
 
 Please find couple of my projects I worked on during the internships, 
 I couldn't add some of the infrastructure flow diagrams since they are proprietary. 
